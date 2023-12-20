@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Outlet } from "react-router-dom";
 
 const SideBar = () => {
     const [hideText, setHideText] = useState('')
@@ -19,7 +20,10 @@ const SideBar = () => {
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content bg-[#F9F9F9]">
                 {/* Page content here */}
-                <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+                <label htmlFor="my-drawer-2" className="lg:hidden">
+                <img onClick={showSideBar} className={`w-12 m-2`} src="https://i.ibb.co/FszfVvn/Icon-Menu.png" alt="" />
+                </label>
+                <Outlet/>
 
             </div>
             <div className="drawer-side">
@@ -42,7 +46,7 @@ const SideBar = () => {
                     <li className={`text-[16px] mt-5 font-mono ${changeLogo ? '' : 'mx-auto'}`}><a><img className="w-8" src="https://i.ibb.co/vkDys3Z/Icon-medical-history.png" alt="" /><span className={`${hideText}`}>Medical History</span></a></li>
                     <li className={`text-[16px] mt-5 font-mono ${changeLogo ? '' : 'mx-auto'}`}><a><img className="w-8" src="https://i.ibb.co/nnB8tcp/Icon-Settings.png" alt="" /><span className={`${hideText}`}>Settings</span></a></li>
                     {/* <li><a>Sidebar Item 2 <span className={`${hideText}`}>Home</span></a></li> */}
-                    <li className={`text-[16px] mt-5 font-mono ${changeLogo ? '' : 'mx-auto'} mt-[100px]`}><a><img className={`w-10 ${changeLogo ? 'hidden' : ' '}`} src="https://i.ibb.co/QXHnDhZ/round.png" alt="" /><span style={{background: 'linear-gradient(101deg, #FF7594 -6.58%, #FF7C65 102.46%)'}} className={`${hideText} text-white p-3 rounded-sm`}>New Appointment</span></a></li>
+                    <li className={`text-[16px] mt-5 font-mono ${changeLogo ? '' : 'mx-auto'} mt-[80px]`}><a><img className={`w-10 ${changeLogo ? 'hidden' : ' '}`} src="https://i.ibb.co/QXHnDhZ/round.png" alt="" /><span style={{background: 'linear-gradient(101deg, #FF7594 -6.58%, #FF7C65 102.46%)'}} className={`${hideText} text-white p-3 rounded-sm`}>New Appointment</span></a></li>
                     {/* <button style={{background: 'linear-gradient(101deg, #FF7594 -6.58%, #FF7C65 102.46%)'}} className="">New appointment</button> */}
                 </ul>
 
