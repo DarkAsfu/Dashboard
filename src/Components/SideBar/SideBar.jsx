@@ -16,11 +16,11 @@ const SideBar = () => {
         setChangeLogo(true)
     }
     return (
-        <div className="drawer lg:drawer-open">
+        <div className="drawer md:drawer-open">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content bg-[#F9F9F9]">
                 {/* Page content here */}
-                <label htmlFor="my-drawer-2" className="lg:hidden">
+                <label htmlFor="my-drawer-2" className="md:hidden">
                 <img onClick={showSideBar} className={`w-12 m-2`} src="https://i.ibb.co/FszfVvn/Icon-Menu.png" alt="" />
                 </label>
                 <Outlet/>
