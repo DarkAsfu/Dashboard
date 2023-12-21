@@ -27,8 +27,8 @@ const HealthInfo = () => {
     ]
     console.log(infos);
     return (
-        <div className="px-4 md:px-0">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6">
+        <div className="px-4 md:px-0 py-8">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-6">
                 {
                     infos.map((info)=> <div style={{boxShadow: '0px 3.29px 4.113px 0px rgba(0, 0, 0, 0.20)'
                     , border: '0.823px solid #EDEBEB'
