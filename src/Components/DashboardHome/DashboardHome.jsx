@@ -1,5 +1,6 @@
 import Appoinments from "../Appointments/Appoinments";
 import Banner from "../Banner/Banner";
+import Covid19Update from "../Covid19Update/Covid19Update";
 import HealthInfo from "../HealthInfo/HealthInfo";
 import Navbar from "../NavBar/Navbar";
 
@@ -14,6 +15,7 @@ const DashboardHome = () => {
                 </div>
                 <div className="xl:w-[490px] lg:w-[40%]">
                     <Appoinments/>
+                    <Covid19Update/>
                 </div>
             </div>
         </div>

@@ -1,0 +1,17 @@
+.covid-title {
+    color: #2E1619;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.second-title {
+    color: #8A8686;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
