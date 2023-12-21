@@ -28,8 +28,8 @@ const Covid19Update = () => {
                 </div>
             </div>
             <div className='md:flex justify-between items-center mt-2'>
-                <img src="https://i.ibb.co/sqfgnmW/Svg-sample2.png" className='w-[228px] mx-auto' alt="" />
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 p-6 text-center w-[200px] md:w-[100%] mx-auto' style={{background: 'linear-gradient(101deg, #FF7594 -6.58%, #FF7C65 102.46%)'}}>
+                <img src="https://i.ibb.co/sqfgnmW/Svg-sample2.png" className='w-[228px] md:w-[210px] mx-auto' alt="" />
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 pr-3 py-2 text-center w-[200px] md:w-[100%] mx-auto rounded-lg' style={{background: 'linear-gradient(101deg, #FF7594 -6.58%, #FF7C65 102.46%)'}}>
                     {
                         data.map(d => (
                             <div key={d.name} className='mt-4'>
