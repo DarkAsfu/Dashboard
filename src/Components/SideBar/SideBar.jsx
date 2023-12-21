@@ -35,7 +35,7 @@ const SideBar = () => {
                                 <img src="https://i.ibb.co/HPMMyfh/Icon-Vector.png" className="w-10" alt="jf" />
                                 <h1 className="text-[#384449]">Medi<span className="text-[#FF7594]">Doc</span></h1>
                             </div> :
-                            <img onClick={showSideBar} className={`w-12 mx-auto`} src="https://i.ibb.co/FszfVvn/Icon-Menu.png" alt="" />
+                            <img onClick={showSideBar} className={`w-12 mx-auto bg-none`} src="https://i.ibb.co/FszfVvn/Icon-Menu.png" alt="" />
                         }
                         <img onClick={removeSideBar} className={`w-[40px] ${hideText}`} src="https://i.ibb.co/sm3WYmD/Icon-Side-Arrow-round.png" alt="" />
                     </div>

@@ -1,6 +1,7 @@
+import './NavBar.css'
 const Navbar = () => {
     return (
-        <div className="w-[80%] ml-[20%] mt-[-17%] md:mt-[1%] lg:w-[100%] md:ml-[5%] md:w-[90%] lg:ml-[0] lg:mt-0 navbar md:pl-[45px] md:pr-[22px] bg-[linear-gradient(92deg, #FF7594 19.86%, #FF797B 84.16%, #FF7C65 139.72%)]">
+        <div className="w-[80%] ml-[20%] mt-[-17%] md:mt-[1%] lg:w-[100%] md:ml-[5%] md:w-[90%] lg:ml-[0] lg:mt-0 navbar md:pl-[45px] md:pr-[22px] nav-bg">
             <div className="flex-1">
                 <h1 className="font-semibold text-[24px] text-[#646F75]">Home</h1>
             </div>

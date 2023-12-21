@@ -26,12 +26,6 @@ const Todo = () => {
     }
   };
 
-  const removeTodo = (index) => {
-    const newTodos = [...todos];
-    newTodos.splice(index, 1);
-    setTodos(newTodos);
-  };
-
   const toggleTodoSelection = (index) => {
     const isSelected = selectedTodos.includes(index);
     if (isSelected) {
