@@ -7,7 +7,7 @@ import Todo from "../ToDo/ToDo";
 
 const DashboardHome = () => {
     return (
-        <div>
+        <div className="">
             <Navbar/>
             <div className="lg:flex justify-between md:pl-[45px] md:pr-[22px]">
                 <div className="xl:w-[px] lg:w-[55%] mb-4">

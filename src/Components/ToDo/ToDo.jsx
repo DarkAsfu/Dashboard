@@ -3,10 +3,10 @@ import { FaCheck, FaTrash, FaPlus } from 'react-icons/fa6';
 
 const Todo = () => {
   const initialTask = [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. last added December 22, 2023",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. last added December 22, 2023",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. last added December 22, 2023",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. last added December 22, 2023",
   ];
   const [todos, setTodos] = useState(initialTask);
   const [newTodo, setNewTodo] = useState('');
@@ -20,7 +20,7 @@ const Todo = () => {
         month: 'long',
         day: 'numeric',
       });
-      const todoWithDate = `${newTodo} (last added ${currentDate})`;
+      const todoWithDate = `${newTodo} last added: ${currentDate}`;
       setTodos([...todos, todoWithDate]);
       setNewTodo('');
     }
@@ -52,8 +52,8 @@ const Todo = () => {
   };
 
   return (
-    <div className='bg-[#fff] p-[16px]'>
-      <h2 className='text-[16px] font-semibold'>To-Do List</h2>
+    <div className='bg-[#fff] dark:bg-[#2c2221] p-[16px] m-4 rounded-md'>
+      <h2 className='text-[16px] font-semibold dark:text-white'>To-Do List</h2>
       <div className='flex gap-7 mt-3 px-2'>
         <div className='w-[394px] rounded-xl' style={{ border: '1px solid #EDEBEB', position: 'relative' }}>
           <input
@@ -91,13 +91,13 @@ const Todo = () => {
         </div>
       </div>
       <div className='flex justify-between items-center'>
-      <div className='mt-3'>
+      <div className='mt-3 dark:text-[#D1D5DB]'>
         <label>
           <input
             type='checkbox'
             checked={selectAll}
             onChange={toggleSelectAll}
-            className='mr-2'
+            className='mr-2 '
           />
           Select All
         </label>
@@ -116,12 +116,12 @@ const Todo = () => {
       </div>
       <div className='mt-3'>
         {todos.map((todo, index) => (
-          <div key={index} className='flex items-center mb-2'>
+          <div key={index} className='flex items-center mb-2 dark:text-[#D1D5DB]'>
             <input
               type='checkbox'
               checked={selectedTodos.includes(index)}
               onChange={() => toggleTodoSelection(index)}
-              className='mr-2'
+              className='mr-2 dark:text-[#D1D5DB]'
             />
             {todo}
           </div>

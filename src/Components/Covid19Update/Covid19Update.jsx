@@ -19,12 +19,12 @@ const Covid19Update = () => {
         }
     ]
     return (
-        <div className="bg-[#fff] p-4 my-4 rounded-lg" style={{border: '1px solid #EDEBEB'}} >
+        <div className="bg-[#fff] m-4 dark:bg-[#2c2221] p-4 mt-4 md:rounded-lg border border-[#EDEBEB] dark:border-none" >
             <div className='flex justify-between'>
-                <h1 className='covid-title'>Covid-19 Updates</h1>
+                <h1 className='covid-title dark:text-white'>Covid-19 Updates</h1>
                 <div>
-                    <p className='covid-title'>10 September 2022</p>
-                    <p className='second-title'>Thursday  10:00:00 AM</p>
+                    <p className='covid-title dark:text-white'>10 September 2022</p>
+                    <p className='second-title dark:text-white'>Thursday  10:00:00 AM</p>
                 </div>
             </div>
             <div className='md:flex justify-between items-center mt-2'>

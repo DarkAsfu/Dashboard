@@ -31,13 +31,13 @@ const HealthInfo = () => {
             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-6">
                 {
                     infos.map((info)=> <div style={{boxShadow: '0px 3.29px 4.113px 0px rgba(0, 0, 0, 0.20)'
-                    , border: '0.823px solid #EDEBEB'
+                    , 
 
-                }} className="border p-3 rounded-md bg-white" key={info.name}>
+                }} className="border p-3 rounded-md border-[#EDEBEB] bg-white dark:bg-[#2c2221] dark:border-[#2c2221] dark:text-white" key={info.name}>
                         <img src={info.icon} alt="" />
-                        <h3 className="text-[#2E1619] text-[12.5px] font-semibold tracking-wide mt-1 mb-2">{info.name}</h3>
-                        <h1 className="text-[#4A3D3F] text-[15px] font-semibold">{info.range}</h1>
-                        <p className="text-[#03922B] text-[11.5px] font-extrabold">{info.status}</p>
+                        <h3 className="text-[#2E1619] dark:text-[#D1D5DB] text-[12.5px] font-semibold tracking-wide mt-1 mb-2">{info.name}</h3>
+                        <h1 className="text-[#4A3D3F] dark:text-[#D1D5DB] text-[15px] font-semibold">{info.range}</h1>
+                        <p className="text-[#03922B] dark:text-[#D1D5DB] text-[11.5px] font-extrabold">{info.status}</p>
                     </div>)
                 }
             </div>
